@@ -1,0 +1,92 @@
+﻿@charset "utf-8";
+* { margin:0; padding:0; }
+img { border:0; }
+body { background:#fffff  url(../images/body-bg.gif) top left repeat-x; font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+#bui{width:950px; height:850px; margin:0 auto;background-color:#FFFFFF;}
+#bei{width:950px; height:920px; margin:0 auto;background-color:#FFFFFF;}
+#content{ width:900px; margin:0 auto;}
+/*第13章案例：“注册页面”增加“换肤”按钮的样式*/
+#skin { position:absolute; left:1080px; top:285px; padding:5px; border:1px solid #FFCCFF; color:#004802; font-weight:bold; }
+.header { background:url(../images/timg.jpg) bottom left no-repeat; height:205px; }
+.logo{ padding-top:20px; padding-left:10px; float:left; }
+.clear{ clear:both; }
+.top-links { float:right; }
+.top-links ul{ list-style:none; padding-top:22px; }
+.top-links li{ float:left; color:#272727; background:url(../images/li-seperator.gif) top right no-repeat; font-weight:bold; line-height:20px; padding:0 20px; }
+.top-links li a{ text-decoration:none; color:#272727; font-weight:bold; }
+.top-links li a:hover, .top-links li a:active{ color:#517208 }
+.info{ float:right; position:absolute; top:180px; left:680px; color:#0080A3; text-shadow:1px 1px #FFFFFF,-1px -1px #FFFFFF, 1px -1px #FFFFFF, -1px 1px #FFFFFF; font-size:40px; }
+.left-col{ width:560px; float:left; }
+.main-content{ color:#9B9875; line-height:18px; }
+h1, h2, h3, h4{ line-height:normal; }
+.main-content h1{ color:#FF8080; padding-bottom:15px; font-size:20px; }
+.main-content span.second_heading{ color:#009; font-weight:bold; display:block; padding-bottom:15px; font-size:13px; }
+.main-content p{ padding-bottom:20px; text-indent:2em; color:#9CF; line-height:18px; }
+a { color:#9B9875; text-decoration:none; }
+a:hover a:active { text-decoration:none; }
+.gallery-section{ width:259px; background:url(../images/dotted-bg.gif) top right repeat-y; padding-right:5px; margin-top:10px; }
+.gallery-section { float:right; }
+.gallery-section h1{ color:#007B3B; padding-bottom:10px; font-size:20px; }
+.gallery-section span.second_heading { color:#0a356d; font-weight:bold; display:block; padding-bottom:10px; font-size:13px; }
+.gallery-section img { padding:5px; float:left; border:1px solid #FFFFFF; }
+.drawing-section { float:right; width:280px; margin-top:10px; }
+.drawing-section h1 { color:#007B3B; padding-bottom:10px; font-size:20px; }
+.drawing-section span.second_heading { color:#0A356D; font-weight:bold; display:block; padding-bottom:10px; font-size:13px; }
+.drawing-section p{ padding-bottom:8px; color:#9B9875; line-height:21px; text-overflow:ellipsis; overflow:hidden; -webkit-line-clamp:2; display:-webkit-box; -webkit-box-orient:vertical; }
+.news-title{ color:#0A356D; font-weight:bold; display:block; padding-bottom:5px; font-size:13px; }
+.news-title a { text-decoration:none; color:#0A356D; }
+.right-col { float:right; width:331px; }
+.events-section { padding:10px 10px 0px 10px; border:2px solid #038CB6; background:#f9eddd url(../images/events-section-bg.gif) bottom right no-repeat; }
+.events-section h1 { color:#007B3B; padding-bottom:10px; font-size:20px; }
+.events-section div { color:#0A356D; font-weight:bold; padding-bottom:10px; }
+.events-section p { color:#C75300; line-height:20px; font-size:11px; padding-top:2px; padding-bottom:20px; }
+.events-section p a { text-decoration:none; color:#C75300; }
+.events-section div.velocity { padding-bottom:10px; text-align:right; }
+.right-title { color:#0A356D; font-weight:bold; font-size:13px; }
+.right-title a { text-decoration:none; color:#0A356D; }
+.kcb { padding:2px 2px; background:url(../images/best-section.gif) top left no-repeat; margin-top:2px; }
+.table { width:100%; border:0px; background-color:#ffffff; }
+.table th { background:#0080A3; line-height:20px; color:#0A356D; }
+.table td { text-align:center; line-height:17px; }
+.rightborder { border-right:1px solid #D9D9D9; border-bottom:1px solid #D9D9D9 }
+.footer { background-color:#0080A3; width:950px; margin:0 auto; }
+.footer-links { font-size:12px; text-align:center; width:900px; color:#FEDBC2; margin:auto; padding-bottom:22px; }
+.footer-links ul { list-style:none; padding:22px 0px 0px 278px; }
+.footer-links li { float:left; margin-bottom:5px; margin-right:9px; color:#FEDBC2; margin-bottom:15px; font-size:13px; }
+.footer-links li a { text-decoration:none; color:#FEDBC2; }
+.class_blog { float:left; height:550px;width:550px; }
+.class_blog h1 { color:#007B3B; padding-bottom:10px; font-size:20px; }
+.class_blog div.second_heading { color:#0A356D; font-weight:bold; padding-bottom:10px; }
+.class_blog p { padding:1px; text-indent:2em; color:#09706C; line-height:18px; border:1px solid black; border-radius:5px 5px; width:520px; }
+.one-photo { height:180px; float:left; }
+.one-photo img { padding-right:20px; padding-bottom:2px; }
+.photo-text { text-align:left; padding-left:25px; padding-bottom:10px; }
+.imgmar { margin-right:5px; }
+.imgsize{ width:112px; height:66px; border-style:solid; border-width:2px; border-color:#FFCC99; }
+legend { font-size:18px; padding-left:10px; padding-right:10px; color:#004802; font-weight:bold; }
+#register { background:#FFFFFF; padding:0px 0px; }
+#register table{ margin:0px auto; width:770px; font-size:15px; color:#004802; }
+#register .stytd{ text-align:right; padding-right:10px; }
+#register span{ margin-left: 10px; color:red; font-size:20px; font-weight:bold; }
+#register tr{ line-height:300%; }
+#register .btntd{ text-align:center; }
+#register form input{ border:1px solid #999999; height:20px; }
+#register form div{ font-size:10px; color:#FF0000; line-height:100%; width:160px; }
+#register input[type="text"], #register input[type="password"], #register input[type="tel"], #register input[type="email"], #register input[type="date"],#register select { border-radius:5px 5px; border-color:#2FA6BE; box-shadow: 1px 1px 2px #000; }
+@keyframes around{
+  0% { transform: translateX(0); }
+  50%{ transform: translateX(400px); }
+  100%{ transform: translateX(0); }
+}
+h1.animation { padding:auto; }
+h1.animation span {
+   display: inline-block; width: 20px; height: 20px; background:#007B3B; border-radius: 100%;
+   animation-name:around;
+   animation-duration: 10s;
+   animation-timing-function: ease;
+   animation-delay: 1s;
+   animation-iteration-count:infinite;
+}
+.mulCol { font-size:16px; column-count:2; column-gap:15px; column-rule:3px double #000000; }
+
+.skin { background-color:#DDDDDD; }   /*第13章案例：增加注册页面“换肤”时使用样式*/

@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>我爱猫猫网</title>
+    <link rel="stylesheet" type="text/css" href="css/style_13.css" /><!--13章案例引用的样式表-->
+    <script type="text/javascript" src="../js/reg.js"></script>
+    <script src="../js/jquery-3.3.1.js"></script><!--13章案例引用jQuery脚本库-->
+<style>
+ *{  
+            margin: 0px;  
+            padding: 0px;  
+        }  
+        video{  
+            position: fixed;  
+            right: 0px;  
+            bottom: 0px;  
+            min-width: 100%;  
+            min-height: 100%;  
+            height: auto;  
+            width: auto;  
+            /*加滤镜*/
+            /*filter: blur(15px); //背景模糊设置 */
+            /*-webkit-filter: grayscale(100%);*/  
+            /*filter:grayscale(100%); //背景灰度设置*/  
+            z-index:-11
+        }  
+        source{  
+            min-width: 100%;  
+            min-height: 100%;  
+            height: auto;  
+            width: auto;  
+        } 
+  p{
+      width: 100%;
+   text-align: center;
+   color: white;
+  }
+</style>
+  </head>
+  <body onLoad="setProvince('province')">
+<video autoplay loop muted>
+  <source src="../image/视频/2.mp4" type="video/mp4"  />
+Your browser does not support the video tag.
+</video>
+   <div id="bui">
+    <div id="content">
+      <div class="logo"><img src="../image/图片/logo.png"  height="25%" width="25%" />我爱猫猫网</div>
+      <div class="top-links">
+                    <ul>
+          <li><a href="home.html">首页</a></li>
+          <li><a href="video.html">视频</a></li>
+          <li><a href="wallpaper.html">壁纸下载</a></li>
+          <li><a href="parenting.html">养育指南</a></li>
+          <li><a href="supplies.html">猫咪用品</a></li>
+          <li><a href="login.html">注册</a></li>
+          <li><a href="help.html">关爱猫咪</a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+      <div class="header">
+      <img src="../image/图片/ha.jpg" width="900px" height="200px"/>
+      </div>
+      <div id="register">
+        <div id="skin">换肤</div><!--13章案例增加的“换肤”按钮-->
+        <form name="f1" id="f1" onSubmit="return validateForm();" action="" method="post">
+          <fieldset>
+            <legend>爱心注册</legend>
+            <table>
+              <tr>
+                <td width="280" class="stytd">用户名：</td>
+                <td width="540"><input type="text" id="userId" placeholder="请输入用户名" onKeyDown="return optInput('userId','pwdId');" onBlur="checkIt('userId');" /><span>*</span><div id="userError"></div></td>
+              </tr>
+              <tr>
+                <td class="stytd">密码：</td>
+                <td><input type="password" id="pwdId" placeholder="请输入密码" onKeyDown="return optInput('pwdId','cfmPwdId');" onBlur="checkIt('pwdId');" /><span>*</span><div id="pwdError"></div></td>
+              </tr>
+              <tr>
+                <td class="stytd">确认密码：</td>
+                <td><input type="password" id="cfmPwdId" placeholder="请输入确认密码" onKeyDown="return optInput('cfmPwdId','sexMaleId');" onBlur="checkIt('cfmPwdId');"  /><span>*</span><div id="cfmPwdError"></div></td>
+              </tr>
+              <tr>
+                <td class="stytd">性别：</td>
+                <td><input type="radio" name="gender" id="sexMaleId" value="male" checked="checked" />男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" value="female" />女</td>
+              </tr>
+              <tr>
+                <td class="stytd">出生日期：</td>
+                <td><input type="Date" name="birthday" /></td>
+              </tr>
+              <tr>
+                <td class="stytd">意向：</td>
+                <td><input type="checkbox" name="interest" value="wenxue" />救助&nbsp;&nbsp;
+                    <input type="checkbox" name="interest" value="yinyue" />领养&nbsp;&nbsp;
+                    <input type="checkbox" name="interest" value="tiyv" />捐款&nbsp;&nbsp;
+                    <input type="checkbox" name="interest" value="jianshen" />寄养&nbsp;&nbsp;
+	            <input type="checkbox" id="selAll" onClick="sel();" />全选/不选
+                    <input type="checkbox" id="inverse" />反选</td><!--13章案例增加的“反选”复选框-->
+              </tr>
+              <tr>
+                <td class="stytd">籍贯：</td>
+                <td><select id="province" onChange="setCity(this.value, 'citys');"></select>
+	            <select name="city" id="citys"><option value="0">选择县市</option></select></td>
+              </tr>
+              <tr>
+                <td class="stytd">联系电话：</td>
+                <td><input type="tel" id="telId" placeholder="请输入联系电话" onKeyDown="return optInput('telId','submitId');" onBlur="checkIt('telId');"  /><span>*</span><div id="telError"></div></td>
+              </tr>
+              <tr>
+                <td class="stytd">电子邮箱：</td>
+                <td><input type="email" placeholder="请输入电子邮箱" multiple="multiple"></td>
+              </tr>
+              <tr class="btntd">
+                <td colspan="2"><input type="submit" value="注册" id="submitId" />&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="reset" value="重置" /></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+</div>
+    <div class="clear"></div>
+    <div class="footer">
+      <div class="footer-links">
+               <ul>
+          <li><a href="home.html">首页</a></li>
+          <li><a href="video.html">视频</a></li>
+          <li><a href="wallpaper.html">壁纸下载</a></li>
+          <li><a href="parenting.html">养育指南</a></li>
+          <li><a href="supplies.html">猫咪用品</a></li>
+          <li><a href="login.html">注册</a></li>
+          <li><a href="help.html">关爱猫咪</a></li>
+        </ul>
+        <div class="clear"></div>
+        Copyright &copy;  Hello neko！ All rights reserved.
+      </div>
+    </div>
+    <script src="13_js/skin.js"></script>     <!--13章案例增加的“换肤”操作-->
+    <script src="13_js/inverse.js"></script>  <!--13章案例增加的兴趣栏“反选”操作-->
+  </body>
+</html>

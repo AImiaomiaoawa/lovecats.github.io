@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>我爱猫猫网</title>
+    <link rel="stylesheet" type="text/css" href="css/style_13.css" />
+    <script src="../js/jquery-3.3.1.js"></script>
+     <script type="text/javascript">
+   var tmpArr = new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+  function SetDate()
+  {
+       var myDate = new Date();
+       var temp = myDate.getFullYear() + "年";
+           temp += (myDate.getMonth() + 1) + "月";
+           temp += myDate.getDate() + "日";
+   temp += " " + tmpArr [myDate.getDay()] + " ";
+           temp += myDate.getHours() + ":";
+           temp += myDate.getMinutes()+ ":";
+           temp += myDate.getSeconds();
+
+          document.getElementById('div2').innerHTML= temp;
+          window.setTimeout(SetDate,1000);
+
+    };
+
+
+    window.onload = function() {
+SetDate();
+     };
+   </script> 
+<style>
+ *{  
+            margin: 0px;  
+            padding: 0px;  
+        }  
+        video{  
+            position: fixed;  
+            right: 0px;  
+            bottom: 0px;  
+            min-width: 100%;  
+            min-height: 100%;  
+            height: auto;  
+            width: auto;  
+            /*加滤镜*/
+            /*filter: blur(15px); //背景模糊设置 */
+            /*-webkit-filter: grayscale(100%);*/  
+            /*filter:grayscale(100%); //背景灰度设置*/  
+            z-index:-11
+        }  
+        source{  
+            min-width: 100%;  
+            min-height: 100%;  
+            height: auto;  
+            width: auto;  
+        } 
+  p{
+      width: 100%;
+   text-align: center;
+   color: white;
+  }
+</style>
+  </head>
+  <body>
+<video autoplay loop muted>
+  <source src="../image/视频/2.mp4" type="video/mp4"  />
+Your browser does not support the video tag.
+</video>
+   <div id="bei">
+    <div id="content">
+      <div class="logo"><img src="../image/图片/logo.png"  height="25%" width="25%" />我爱猫猫网</div>
+      <div class="top-links">
+                     <ul>
+          <li><a href="home.html">首页</a></li>
+          <li><a href="video.html">视频</a></li>
+          <li><a href="wallpaper.html">壁纸下载</a></li>
+          <li><a href="parenting.html">养育指南</a></li>
+          <li><a href="supplies.html">猫咪用品</a></li>
+          <li><a href="login.html">注册</a></li>
+          <li><a href="help.html">关爱猫咪</a></li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+      <div class="header">
+      <img src="../image/图片/ll.jpg" width="900px" height="200px"/>
+      </div>
+
+            <h1 class="animation">猫咪保护<span></span></h1>
+            
+<p class="mulCol"><span></span>
+           <font face="楷体" size="5" color="#006699">&nbsp;&nbsp;&nbsp;&nbsp;流浪动物救助平台是一个解决城市中庞大的流浪动物群的管理难以及流浪动物救助信息分享的平台。<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;近年来，随着计算机技术的发展，利用计算机创建的平台来对城市中的流浪动物的信息进行有效地登记和管理是非常有必要的。通过该平台，人们不仅可以随时随地的将自己发现的流浪动物信息进行登记，同时还可以浏览别人发布的救助信息，并进行评论和留言，与其他的爱心人士共同讨论救助方案等。这一功能极大的解决了流浪动物信息分享难的问题，同时为爱心人士搭建了交流平台，可以让更多的人参与到流浪动物的救助中来。而那些丢失爱宠的主人，也可以快速的将寻宠信息发布到该平台上，让更多的同城居民看到信息，及时提供线索。而那些因为工作或者其他原因不能继续喂养宠物的主人，也可以通过该平台发布为爱宠寻主的信息通知，及时为自己的爱宠找到新家。这些功能不仅可以解决宠物丢失寻找难的问题和降低宠物遗弃问题的发生，从其他方面来讲也可以减少城市流浪动物的增加数量<br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;目前国内外对于流浪动物的解决也是存在不同的问题。流浪动物问题是一个世界性难题，无论是国内国外形式都很严峻。在国外通常采取“收容、认养”的方式来解决流浪动物问题，收容站既有地方政府办的，也有民办的。但是总的收容所数量有限，能够收容处理的流浪动物也是极少数能够被人们所发现的，大多数流浪动物依旧没有被收容甚至是发现。针对流浪动物问题，在国内，目前北京、上海等地也实行“收养、绝育、接种、认养”的方式，并且还建立了一些宠物医院。一些大学校园中也是开设了流浪动物救助的社团，用于解决学校周边的一些流浪动物问题。总的来说，无论是国内国外，对于流浪动物的处理最大问题依旧是流浪动物分散位置的信息获得以及如何有效的将爱心人士统一在一起，共同对更多的流浪动物进行专业科学的管理和救助。
+</p>
+ 
+<p>&nbsp
+           <font face="楷体" size="6" color="#000000">
+           <div id="div2"></div>
+</p>
+         </div>
+       </div>
+
+
+      </div>
+    </div>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+      <div class="footer-links">
+              <ul>
+          <li><a href="home.html">首页</a></li>
+          <li><a href="video.html">视频</a></li>
+          <li><a href="wallpaper.html">壁纸下载</a></li>
+          <li><a href="parenting.html">养育指南</a></li>
+          <li><a href="supplies.html">猫咪用品</a></li>
+          <li><a href="login.html">注册</a></li>
+          <li><a href="help.html">关爱猫咪</a></li>
+        <div class="clear"></div>
+        Copyright &copy;  Hello neko！ All rights reserved.
+      </div>
+    </div>
+    <script src="13_js/kcb.js"></script>        <!--13章案例增加的“课程表”显示效果-->
+    <script src="13_js/fast_slow.js"></script>  <!--13章案例增加的“加速减速”按钮效果-->
+  </body>
+</html>
